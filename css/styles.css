@@ -17,6 +17,10 @@
 
 body {
   background: var(--primary-one);
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .site-nav {
@@ -52,4 +56,37 @@ body {
   font-weight: 700;
   margin-right: auto;
   text-shadow: 2px 3px 0px var(--primary-four), -3px -2px 0px var(--primary-two);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.profile-container {
+  max-width: 300px;
+  object-fit: cover;
+  justify-self: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 6px 6px 0px var(--primary-four), 12px 12px 0px var(--primary-two);
+}
+
+.profile-container img {
+  width: 100%;
+  display: block;
+}
+
+.welcome-article {
+  margin: 64px;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.5rem;
 }
